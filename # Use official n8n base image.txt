@@ -1,0 +1,14 @@
+# Use official n8n base image
+FROM n8nio/n8n:latest
+
+# Copy your custom UI and styles into n8n
+COPY ./custom /home/node/.n8n/custom
+
+# Tell n8n where to find your custom assets
+ENV N8N_CUSTOM_EXTENSIONS="/home/node/.n8n/custom"
+
+# Expose default n8n port
+EXPOSE 5678
+
+# Start n8n
+CMD ["n8n", "start"]

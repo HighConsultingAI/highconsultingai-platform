@@ -1,0 +1,12 @@
+# High Consulting AI Automation Platform
+
+This is a rebranded version of the n8n automation system built for High Consulting AI.  
+It includes:
+- Custom logo
+- High Consulting AI color theme
+- Ready for deployment on Render or Docker
+
+### 🧠 Start locally:
+```bash
+docker build -t highconsultingai .
+docker run -p 5678:5678 highconsultingai
